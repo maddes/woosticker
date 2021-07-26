@@ -153,16 +153,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         refreshStickerDirPath();
         refreshKeyboardConfig();
-
-        SwitchCompat backButtonToggle = findViewById(R.id.backButtonToggle);
-        backButtonToggle.setChecked(sharedPref.getBoolean("showBackButton", false));
-        backButtonToggle.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            showChangedPrefText();
-            SharedPreferences.Editor editor = sharedPref.edit();
-            editor.putBoolean("showBackButton", isChecked);
-            editor.apply();
-        });
-
+        
         SwitchCompat disableAnimations = findViewById(R.id.disable_animations);
         disableAnimations.setChecked(sharedPref.getBoolean("disable_animations", false));
         disableAnimations.setOnCheckedChangeListener((buttonView, isChecked) -> {
