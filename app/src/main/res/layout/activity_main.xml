@@ -47,15 +47,6 @@
             android:text="" />
 
         <Button
-            android:id="@+id/chooseStickerDir2"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#81A1C1"
-            android:onClick="chooseDir"
-            android:text="@string/choose_dir" />
-
-        <Button
             android:id="@+id/chooseStickerDir"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
@@ -67,16 +58,22 @@
         <View
             style="@style/widget"
             android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="?android:attr/listDivider" />
+            android:layout_height="14dp" />
 
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/disable_animations"
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/disableAnimations"
             style="@style/widget"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:buttonTint="#81A1C1"
             android:text="@string/disable_animations" />
+
+        <View
+            android:id="@+id/view"
+            style="@style/widget"
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
 
         <View
             style="@style/widget"

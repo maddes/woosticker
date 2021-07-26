@@ -13,10 +13,10 @@ import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.CompoundButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.SwitchCompat;
 import androidx.documentfile.provider.DocumentFile;
 
 import java.io.File;
@@ -153,8 +153,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         refreshStickerDirPath();
         refreshKeyboardConfig();
-        
-        SwitchCompat disableAnimations = findViewById(R.id.disable_animations);
+
+        CompoundButton disableAnimations = findViewById(R.id.disableAnimations);
         disableAnimations.setChecked(sharedPref.getBoolean("disable_animations", false));
         disableAnimations.setOnCheckedChangeListener((buttonView, isChecked) -> {
             showChangedPrefText();

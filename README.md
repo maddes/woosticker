@@ -1,4 +1,6 @@
-# woosticker
+# woosticker(Forked)
+
+This is a fork of the OG woosticker with worse changes to fit my personal usecase. I am new to android development, so the code is probably not proper with googles design guides. I changed up the design, and removed a few customization features in favor of a unified design on all devices. I might think about adding in adjustable number of stickers per row, but plan on keeping the icon size the same which should properly scale using dp to px conversion to fit different display sizes
 
 It's like [uSticker](https://github.com/apsun/uSticker) except with exceptionally worse programming. Code is not anywhere near publishable state, but app is functional at the least so I thought I would share.
 
