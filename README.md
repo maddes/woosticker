@@ -27,14 +27,14 @@ woosticker was intended to provide pseudo-sticker support for messaging apps tha
 
 Current landing screen (it's hideous, I know):
 
-![image1](https://raw.githubusercontent.com/rzhou1999/woosticker/main/screenshots/1.png)
+![image1](https://raw.githubusercontent.com/ChristianVaughn/woosticker/main/screenshots/1.png)
 
 Keyboard layout:
 
-![image2](https://raw.githubusercontent.com/rzhou1999/woosticker/main/screenshots/2.png)
+![image2](https://raw.githubusercontent.com/ChristianVaughn/woosticker/main/screenshots/2.png)
 
 Example file structure:
 
-![image3](https://raw.githubusercontent.com/rzhou1999/woosticker/main/screenshots/3.png)
+![image3](https://raw.githubusercontent.com/ChristianVaughn/woosticker/main/screenshots/3.png)
 
 All individual directories are put into their own "pack." The base directory also can constitute its own pack of there are image files directly inside of it.
