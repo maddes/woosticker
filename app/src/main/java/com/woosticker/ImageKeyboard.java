@@ -16,6 +16,8 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+import android.util.DisplayMetrics;
+
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -181,8 +183,12 @@ public class ImageKeyboard extends InputMethodService {
     public void onCreate() {
         super.onCreate();
         sharedPref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        iconsPerRow = sharedPref.getInt("iconsPerRow", 3);
-        iconSize = sharedPref.getInt("iconSize", 160);
+        iconsPerRow = 4;
+        DisplayMetrics metrics = getResources().getDisplayMetrics();
+        float maxWidth =  20 * metrics.density;
+        maxWidth = metrics.widthPixels - maxWidth;
+        iconSize = (int)maxWidth/iconsPerRow; //sharedPref.getInt("iconSize", 160);
+
         reloadPacks();
     }
 
@@ -219,9 +225,9 @@ public class ImageKeyboard extends InputMethodService {
         }
 
         if (!allSupported) {
-            Toast.makeText(getApplicationContext(),
+           /* Toast.makeText(getApplicationContext(),
                     "One or more image formats not supported here. Some stickers may not send correctly.",
-                    Toast.LENGTH_LONG).show();
+                    Toast.LENGTH_LONG).show(); */
         }
     }
 

@@ -172,9 +172,9 @@ public class MainActivity extends Activity {
             editor.apply();
         });
 
-        final SeekBar iconsPerRowSeekBar = findViewById(R.id.iconsPerRowSeekBar);
-        iconsPerRowSeekBar.setProgress(sharedPref.getInt("iconsPerRow", 3));
-        iconsPerRowSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        //final SeekBar iconsPerRowSeekBar = findViewById(R.id.iconsPerRowSeekBar);
+        //iconsPerRowSeekBar.setProgress(sharedPref.getInt("iconsPerRow", 3));
+       /* iconsPerRowSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int iconsPerRow = 3;
 
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -191,11 +191,11 @@ public class MainActivity extends Activity {
                 refreshKeyboardConfig();
                 showChangedPrefText();
             }
-        });
+        }); */
 
-        final SeekBar iconSizeSeekBar = findViewById(R.id.iconSizeSeekBar);
-        iconSizeSeekBar.setProgress(sharedPref.getInt("iconSize", 160) / 10);
-        iconSizeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        //final SeekBar iconSizeSeekBar = findViewById(R.id.iconSizeSeekBar);
+        //iconSizeSeekBar.setProgress(sharedPref.getInt("iconSize", 160) / 10);
+      /*  iconSizeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int iconSize = 160;
 
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -212,20 +212,21 @@ public class MainActivity extends Activity {
                 refreshKeyboardConfig();
                 showChangedPrefText();
             }
-        });
+        }); */
     }
 
     /**
      * Refreshes config from preferences
      */
     void refreshKeyboardConfig() {
-        int iconsPerRow = sharedPref.getInt("iconsPerRow", 3);
-        TextView iconsPerRowValue = findViewById(R.id.iconsPerRowValue);
-        iconsPerRowValue.setText(String.valueOf(iconsPerRow));
+        //int iconsPerRow = sharedPref.getInt("iconsPerRow", 3);
+        //TextView iconsPerRowValue = findViewById(R.id.iconsPerRowValue);
+        //iconsPerRowValue.setText(String.valueOf(iconsPerRow));
 
-        int iconSize = sharedPref.getInt("iconSize", 160);
-        TextView iconSizeValue = findViewById(R.id.iconSizeValue);
-        iconSizeValue.setText(String.format("%d px", iconSize));
+        //int iconSize = sharedPref.getInt("iconSize", 160);
+        //TextView iconSizeValue = findViewById(R.id.iconSizeValue);
+        //iconSizeValue.setText(String.format("%d px", iconSize));
+
     }
 
     /**
@@ -237,7 +238,7 @@ public class MainActivity extends Activity {
         int numStickersImported = sharedPref.getInt("numStickersImported", 0);
 
         TextView dirStatus = findViewById(R.id.stickerDirStatus);
-        dirStatus.setText(String.format("%s on %s with %d stickers loaded.", stickerDirPath, lastUpdateDate, numStickersImported));
+        dirStatus.setText(String.format("%d stickers loaded.\nLast updated on %s. ",numStickersImported, lastUpdateDate));
     }
 
     /**

@@ -1,37 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@android:color/background_dark"
+    android:background="@android:color/background_light"
     tools:context=".ImageKeyboard">
 
     <HorizontalScrollView
         android:id="@+id/topHScrollView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
 
-        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        <LinearLayout
             android:id="@+id/packContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/background_dark"
+            android:background="@android:color/background_light"
             android:orientation="horizontal" />
     </HorizontalScrollView>
 
-    <HorizontalScrollView
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="275dp"
         android:layout_below="@id/topHScrollView"
-        android:background="#fff">
+        android:background="#fff"
+        android:fadingEdge="vertical"
+        android:scrollbars="none">
 
-        <LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+        <LinearLayout
             android:id="@+id/imageContainer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/background_dark"
-            android:orientation="horizontal" />
-    </HorizontalScrollView>
+            android:background="@android:color/background_light"
+            android:orientation="vertical" />
+    </ScrollView>
 </RelativeLayout>

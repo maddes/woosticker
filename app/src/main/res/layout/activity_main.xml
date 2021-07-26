@@ -49,58 +49,6 @@
         android:layout_height="wrap_content"
         android:text="@string/disable_animations" />
 
-    <LinearLayout
-        style="@style/widget"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/icons_per_row_status" />
-
-        <TextView
-            android:id="@+id/iconsPerRowValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <SeekBar
-            android:id="@+id/iconsPerRowSeekBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="10"
-            android:min="1"
-            android:progress="4" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        style="@style/widget"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/icon_size_status" />
-
-        <TextView
-            android:id="@+id/iconSizeValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <SeekBar
-            android:id="@+id/iconSizeSeekBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:max="32"
-            android:min="8"
-            android:progress="16" />
-
-    </LinearLayout>
-
     <View
         style="@style/widget"
         android:layout_width="match_parent"
