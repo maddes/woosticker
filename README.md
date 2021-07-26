@@ -17,7 +17,11 @@ Note that this is primarily a personal project, and the feature set will largely
 * [ ] UI improvements + tutorial
 * [ ] Add more than just png and gif support
 * [ ] Clean up code + add javadoc documentation
+* [ ] Create folder called StickerPacks if it doesnt exist and only use that for Stickers location
+* [ ] fix navbar not changing color when keyboard is active.
+* [ ] Popup on initial app launch to enable keyboard page in system settings
 * [ ] If there's something else you would like to see please submit an issue (no guarantees on when I'll get around to doing them however)
+
 
 ## Sticker-use disclaimer
 
