@@ -1,6 +1,7 @@
 name: Create debug apk
 
 on:
+  workflow_dispatch
   push:
     branches:
       - master
